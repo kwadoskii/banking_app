@@ -50,6 +50,8 @@
   --text-20: 20px;
   --text-24: 24px;
   --text-30: 30px;
+
+  --color-bankGradient: #155dfc;
 }
 
 @utility no-scrollbar {
@@ -72,11 +74,6 @@
   align-item: items-center;
   justify: justify-center;
 }
-
-/* @utility text-16 {
-  font-size: 16px;
-  line-height: 24px;
-} */
 
 /* custom tailwind class */
 .input-class {
@@ -241,7 +238,7 @@
 
 .transactions-account-balance {
   @apply flex-center flex-col  gap-2 rounded-md bg-blue-25/20 px-4 py-2 text-white;
-}
+} */
 
 .header-box {
   @apply flex flex-col gap-1;
@@ -253,7 +250,7 @@
 
 .header-box-subtext {
   @apply text-14 lg:text-16 font-normal text-gray-600;
-} */
+}
 
 /* Bank Card */
 /* .bank-card {

@@ -1,4 +1,3 @@
-import { text } from "stream/consumers";
 import type { Config } from "tailwindcss";
 
 const config = {
@@ -20,9 +19,6 @@ const config = {
       },
     },
     extend: {
-      text: {
-        16: "16px",
-      },
       colors: {
         fill: {
           1: "rgba(255, 255, 255, 0.10)",
@@ -105,7 +101,10 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("tailwindcss-font-inter")({ importFontFace: false }),
+  ],
 } satisfies Config;
 
 export default config;
